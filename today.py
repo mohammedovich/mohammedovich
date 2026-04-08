@@ -47,6 +47,13 @@ def simple_request(func_name, query, variables):
     """
     request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
     if request.status_code == 200:
+        payload = request.json()
+        if payload.get('errors'):
+            raise Exception(func_name, ' GraphQL errors:', payload['errors'], QUERY_COUNT)
+        if payload.get('data') is None:
+            raise Exception(func_name, ' returned no data:', payload, QUERY_COUNT)
+        if variables.get('login') and payload['data'].get('user') is None:
+            raise Exception(func_name, f" could not resolve GitHub user '{variables['login']}'", payload, QUERY_COUNT)
         return request
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
 
