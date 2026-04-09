@@ -6,6 +6,8 @@ from lxml import etree
 import time
 import hashlib
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
@@ -352,8 +354,13 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     """
     Parse SVG files and update elements with my age, commits, stars, repositories, and lines written
     """
-    log_step(f"svg_overwrite: updating {filename}")
-    tree = etree.parse(filename)
+    file_path = os.path.join(BASE_DIR, filename)
+    if not os.path.exists(file_path):
+        log_step(f"svg_overwrite: skipping missing file {file_path}")
+        return False
+
+    log_step(f"svg_overwrite: updating {file_path}")
+    tree = etree.parse(file_path)
     root = tree.getroot()
     justify_format(root, 'commit_data', commit_data, 22)
     justify_format(root, 'star_data', star_data, 14)
@@ -363,7 +370,8 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     justify_format(root, 'loc_data', loc_data[2], 9)
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
-    tree.write(filename, encoding='utf-8', xml_declaration=True)
+    tree.write(file_path, encoding='utf-8', xml_declaration=True)
+    return True
 
 
 def justify_format(root, element_id, new_text, length=0):
@@ -508,8 +516,10 @@ if __name__ == '__main__':
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
     log_step("writing updated SVG output files")
-    svg_overwrite('dark_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    dark_updated = svg_overwrite('dark_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    light_updated = svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    if not dark_updated and not light_updated:
+        log_step("no SVG files were found in the repository, so there was nothing to update")
 
     # move cursor to override 'Calculation times:' with 'Total function time:' and the total function time, then move cursor back
     print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
