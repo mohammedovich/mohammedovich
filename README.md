@@ -94,7 +94,7 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 
 <div align="center">
 
-<img width="90%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mohammedovich&theme=codeSTACKr" alt="Profile summary" />
+<img width="90%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/0-profile-details.svg" alt="Profile summary" />
 
 </div>
 
@@ -103,15 +103,15 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 ## Achievements
 
 <div align="center">
-  <img width="50%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=mohammedovich&theme=codeSTACKr" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mohammedovich&theme=codeSTACKr&utcOffset=0" alt="GitHub activity highlights" />
+  <img width="50%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/3-stats.svg" alt="GitHub stats" />
+  <img width="49%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/4-productive-time.svg" alt="GitHub activity highlights" />
 </div>
 
 ---
 
 ## Languages By Repo
-<div align="cemter"> 
-  <img width="90%" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mohammedovich&theme=codeSTACKr" />
+<div align="center">
+  <img width="90%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/1-repos-per-language.svg" alt="Languages by repository" />
 </div>
 
 ---
