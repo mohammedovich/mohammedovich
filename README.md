@@ -85,6 +85,17 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 
 ---
 
+## Primary Languages
+
+- **Go** for cloud-native services, infrastructure tooling, and high-performance backend systems
+- **Java** for enterprise backend systems, Spring-based services, and scalable platform delivery
+- **Kotlin** for modern JVM services, concise backend development, and Android-capable application work
+- **Python** for automation, tooling, scripting, cloud operations, and data-oriented workflows
+- **TypeScript / JavaScript** for frontend applications, Node.js services, and developer tooling
+- **SQL / NoSQL** for relational design, query optimization, and distributed data platform work
+
+---
+
 ## GitHub Status
 
 <div align="center">
@@ -105,13 +116,6 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 <div align="center">
   <img width="50%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/3-stats.svg" alt="GitHub stats" />
   <img width="49%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/4-productive-time.svg" alt="GitHub activity highlights" />
-</div>
-
----
-
-## Languages By Repo
-<div align="center">
-  <img width="90%" src="https://raw.githubusercontent.com/mohammedovich/mohammedovich/main/profile-summary-card-output/codeSTACKr/1-repos-per-language.svg" alt="Languages by repository" />
 </div>
 
 ---
