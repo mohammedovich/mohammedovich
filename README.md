@@ -133,3 +133,6 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 ## Profile Activity
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=mohammedovich&bg_color=0D1117&color=C9D1D9&line=2F81F7&point=FFFFFF&area=true&hide_border=true" alt="GitHub activity graph" />
+
+
+[![Mohammedovich profile views](https://u8views.com/api/v1/github/profiles/1205479/views/day-week-month-total-count.svg)](https://u8views.com/github/mohammedovich)
