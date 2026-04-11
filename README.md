@@ -94,7 +94,7 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 
 <div align="center">
 
-<img width="90%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mohammedovich&theme=github_dark" alt="Profile summary" />
+<img width="90%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mohammedovich&theme=codeSTACKr" alt="Profile summary" />
 
 </div>
 
@@ -103,7 +103,15 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
 ## Achievements
 
 <div align="center">
-  <img width="90%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mohammedovich&theme=github_dark&utcOffset=0" alt="GitHub activity highlights" />
+  <img width="50%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=mohammedovich&theme=codeSTACKr" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mohammedovich&theme=codeSTACKr&utcOffset=0" alt="GitHub activity highlights" />
+</div>
+
+---
+
+## Languages By Repo
+<div align="cemter"> 
+  <img width="90%" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mohammedovich&theme=codeSTACKr" />
 </div>
 
 ---
@@ -128,11 +136,12 @@ I’m a **Senior Lead Cloud & Software Engineer** focused on delivering secure, 
   </a>
 </p>
 
----
+
+<!-- ---
 
 ## Profile Activity
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=mohammedovich&bg_color=0D1117&color=C9D1D9&line=2F81F7&point=FFFFFF&area=true&hide_border=true" alt="GitHub activity graph" />
 
 
-[![Mohammedovich profile views](https://u8views.com/api/v1/github/profiles/1205479/views/day-week-month-total-count.svg)](https://u8views.com/github/mohammedovich)
+[![Mohammedovich profile views](https://u8views.com/api/v1/github/profiles/1205479/views/day-week-month-total-count.svg)](https://u8views.com/github/mohammedovich) -->
