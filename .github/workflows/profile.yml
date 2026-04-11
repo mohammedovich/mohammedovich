@@ -42,7 +42,7 @@ jobs:
         env: # default use ${{ secrets.ACCESS_TOKEN }}, you should replace with your personal access token
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
-          USERNAME: ${{ github.USER_NAME }}
+          USERNAME: ${{ secrets.USER_NAME }}
           # BRANCH_NAME is optional, default to main, branch name to push cards
           BRANCH_NAME: "main"
           # UTC_OFFSET is optional, default to zero
